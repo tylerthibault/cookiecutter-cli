@@ -1,3 +1,1 @@
-# {{ cookiecutter.project_name }}
-
-{{ cookiecutter.description }}
+# Cookie cutter Tutorial Flask build
