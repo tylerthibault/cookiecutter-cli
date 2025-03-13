@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ cookiecutter.app_name }}</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap/bootstrap.min.css') }}">
+    
+    <!-- My CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    {% block styles %}
+        
+    {% endblock styles %}
+</head>
+<body>
+    {% block page_wrapper %}
+
+    {% block top_nav %}
+        
+    {% endblock top_nav %}
+    
+    {% block main %}
+        
+    {% endblock main %}
+
+    {% block footer %}
+        
+    {% endblock footer %}
+    
+    {% endblock page_wrapper %}
+
+    <!-- bootstrap js -->
+    <script src="{{ url_for('static', filename='js/bootstrap/bootstrap.bundle.min.js') }}"></script>
+
+    <!-- My JS -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    {% block scripts %}
+        
+    {% endblock scripts %}
+</body>
+</html>

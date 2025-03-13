@@ -3,5 +3,7 @@
     "app_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
     "author_name": "Your Name",
     "description": "A short description of the project",
+    "python_version": "3.8",
+    "port_number": "5100",
     "cli_entrypoint": "mycli"
 }

@@ -1,0 +1,158 @@
+{% extends 'bases/main.html' %}
+
+{% block main %}
+<!-- Hero Section -->
+<section class="bg-primary text-white text-center py-5">
+    <div class="container px-4">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-8 mx-auto">
+                <h1 class="display-4 fw-bold mb-3">Welcome to {{ cookiecutter.app_name }}</h1>
+                <p class="lead mb-4">A powerful, customizable starter kit to accelerate your web development process</p>
+                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                    <button type="button" class="btn btn-light btn-lg px-4 me-sm-3">Get Started</button>
+                    <button type="button" class="btn btn-outline-light btn-lg px-4">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-5">
+    <div class="container px-4">
+        <div class="row gx-5 text-center mb-5">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="fw-bold">Powerful Features</h2>
+                <p class="lead">Everything you need to build amazing web applications</p>
+            </div>
+        </div>
+        <div class="row gx-5">
+            <div class="col-lg-4 mb-5">
+                <div class="card h-100 shadow border-0">
+                    <div class="card-body p-4">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 p-3 d-inline-block">
+                            <i class="bi bi-collection"></i>
+                        </div>
+                        <h5 class="card-title fw-bold">Modern Stack</h5>
+                        <p class="card-text">Built with the latest technologies to ensure your project stays current and maintainable.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-5">
+                <div class="card h-100 shadow border-0">
+                    <div class="card-body p-4">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 p-3 d-inline-block">
+                            <i class="bi bi-toggles2"></i>
+                        </div>
+                        <h5 class="card-title fw-bold">Customizable</h5>
+                        <p class="card-text">Easily adapt the template to your needs with flexible configuration options.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-5">
+                <div class="card h-100 shadow border-0">
+                    <div class="card-body p-4">
+                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 p-3 d-inline-block">
+                            <i class="bi bi-lightning-charge"></i>
+                        </div>
+                        <h5 class="card-title fw-bold">Performance Optimized</h5>
+                        <p class="card-text">Designed with performance in mind to deliver the best user experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="py-5 bg-light">
+    <div class="container px-4">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-8 col-xl-6">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold">What People Are Saying</h2>
+                    <p class="lead">Don't just take our word for it</p>
+                </div>
+            </div>
+        </div>
+        <div class="row gx-5">
+            <div class="col-lg-4 mb-4">
+                <div class="card border-0 shadow">
+                    <div class="card-body p-4">
+                        <div class="mb-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <p class="small">"This starter kit saved me hours of setup time. Highly recommended!"</p>
+                        <div class="d-flex align-items-center">
+                            <div class="rounded-circle bg-secondary text-white d-inline-flex align-items-center justify-content-center" style="width:40px;height:40px;">JS</div>
+                            <div class="ms-3">
+                                <div class="fw-bold">John Smith</div>
+                                <div class="text-muted">Web Developer</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card border-0 shadow">
+                    <div class="card-body p-4">
+                        <div class="mb-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <p class="small">"Perfect balance of flexibility and structure. Just what our team needed."</p>
+                        <div class="d-flex align-items-center">
+                            <div class="rounded-circle bg-secondary text-white d-inline-flex align-items-center justify-content-center" style="width:40px;height:40px;">AL</div>
+                            <div class="ms-3">
+                                <div class="fw-bold">Amy Lee</div>
+                                <div class="text-muted">Frontend Engineer</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+                <div class="card border-0 shadow">
+                    <div class="card-body p-4">
+                        <div class="mb-2">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <i class="bi bi-star-fill text-warning"></i>
+                        </div>
+                        <p class="small">"The documentation is excellent, made onboarding new team members easy."</p>
+                        <div class="d-flex align-items-center">
+                            <div class="rounded-circle bg-secondary text-white d-inline-flex align-items-center justify-content-center" style="width:40px;height:40px;">MJ</div>
+                            <div class="ms-3">
+                                <div class="fw-bold">Mike Jones</div>
+                                <div class="text-muted">Team Lead</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to action -->
+<section class="py-5 bg-gradient bg-primary text-white">
+    <div class="container px-4">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="fw-bold mb-4">Ready to get started?</h2>
+                <p class="lead mb-5">Download now and see how {{ cookiecutter.app_name }} can transform your development workflow.</p>
+                <button class="btn btn-light btn-lg px-5">Download</button>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock main %}

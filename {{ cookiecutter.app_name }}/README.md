@@ -1,7 +1,34 @@
-{{ cookiecutter.app_name }}
+# {{ cookiecutter.project_name }}
 
-A basic readme for a basic file setup. 
+## Description
+{{ cookiecutter.description | default("A brief description of what this project does and who it's for.") }}
 
-# setup a python virtual environment
-1. py -m venv .venv
-2. source .venv/Script/activate
+## Features
+<!-- TODO: Add features -->
+- Feature 1
+- Feature 2
+- Feature 3
+
+## Prerequisites
+- Python {{ cookiecutter.python_version }}
+<!-- TODO: Add dependencies -->
+- Other dependencies...
+
+## Installation
+
+### Setup a Python virtual environment
+- See the `build_instructions.md` file
+
+## Usage
+
+
+## Project Structure
+```
+{{ cookiecutter.app_name }}/
+├── docs/               # Documentation
+├── src/                # Source code
+├── tests/              # Test cases
+├── .gitignore          # Git ignore file
+├── README.md           # This file
+└── requirements.txt    # Dependencies
+```
